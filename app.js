@@ -5,7 +5,7 @@ app.use(express.json());
 const { v4: uuidv4 } = require('uuid');
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/expenses").then(()=>{
+mongoose.connect("mongodb+srv://sajin:sajin@expense-tracker.ejsak.mongodb.net/?retryWrites=true&w=majority&appName=expense-tracker").then(()=>{
   console.log("Connected to database");
 });
 
